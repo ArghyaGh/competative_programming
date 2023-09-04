@@ -60,3 +60,36 @@ int main()
 /*
 6 6 4
 */
+
+
+
+
+
+//next round
+#include<stdio.h>
+int main()
+{
+    int n, k; scanf("%d", &n); scanf("%d", &k);
+    int arr[n]; int passer;
+    for (int i = 0; i <= n; i++)
+    {
+        scanf("%d", &arr[i]);
+        if(arr[i] > k) {passer++;}
+        if(arr[i] == k && arr[i] < k) {break;}
+        printf("%d", arr[i]); //test
+        
+    }
+
+    printf("---%d---", passer);
+
+    return 0;
+}
+
+/*
+8 5
+10 9 8 7 7 7 5 5
+
+4 2
+0 0 0 0
+
+*/
