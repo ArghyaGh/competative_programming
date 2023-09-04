@@ -35,3 +35,28 @@ localization
 internationalization
 pneumonoultramicroscopicsilicovolcanoconiosis
 */
+
+
+
+
+//Theatre square
+#include<stdio.h>
+int main()
+{
+    int m, n, a;
+
+    scanf("%d %d %d", &m, &n, &a);
+    // length calc
+    float length = (m / a);
+    // width calc
+    float width = (n / a);
+    // total calc 
+    float tiles = length * width;
+
+    printf("%f %f %f", tiles, length, width);
+    return 0;
+}
+
+/*
+6 6 4
+*/
