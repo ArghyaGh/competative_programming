@@ -1,1 +1,37 @@
+//waytoolongwords unsolved
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i; scanf("%d", &i); char word[100]; 
+    char first[i]; char last[i]; int len[i];
+    int j;
+    for (j = 0; j <= i; j++)
+    {
+        gets(word);
+        
+        if (strlen(word) > 4)
+        {
+            first[j] = word[0];
+            len[j] = strlen(word) - 2;
+            last[j] = word[strlen(word)];
+        }
+    }
 
+    for (j = 0; j <= i; j++)
+    {
+        printf("%s %d %s", first[j], len[j], last[j]);
+    }
+
+    return 0;
+}
+
+/*
+input:----
+
+4
+word
+localization
+internationalization
+pneumonoultramicroscopicsilicovolcanoconiosis
+*/
